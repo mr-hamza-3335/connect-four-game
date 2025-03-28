@@ -1,6 +1,5 @@
 import streamlit as st
 import numpy as np
-import time
 
 # Constants
 ROW_COUNT = 6
@@ -96,4 +95,4 @@ if st.button("Restart Game 🔄"):
     st.session_state.turn = PLAYER_ONE
     st.session_state.game_over = False
     st.session_state.message = "Player 1's turn (🔴)"
-    st.experimental_rerun()
+    st.rerun()  # Correct method to restart the app
